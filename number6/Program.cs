@@ -1,10 +1,7 @@
-﻿Console.Write("Введите число : ");
+﻿Console.WriteLine("Введите число : ");
 int a = Convert.ToInt32(Console.ReadLine());
-for(int i = 1 ; i <= a ; i++){
-    if (!Convert.ToBoolean(i%2)){
-        Console.Write(i);
-        if (Convert.ToBoolean(i-a)){
-            Console.Write(",");
-            }
-    }
+if (Convert.ToBoolean(a%2)){
+    Console.WriteLine("Нечетное");
+}else{
+    Console.WriteLine("Четное");
 }
